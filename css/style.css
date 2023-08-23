@@ -1,53 +1,53 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-               
-:root {
-    --fuente: 'SF Pro Display', sans-serif;
 
-    --primario: #784D3C;
-    --fondo: #f6f6f6;
-    --azul-claro: #16D5F8;
-    --azul-oscuro: #1A88FF;
-    --gradiente: linear-gradient(160deg, #1A88FF 0%, #16D5F8 100%);
-    --azul-marino: #111427;
-    --azul-marino-1: #0a0c17;
-    --gris-claro: #c4c4c4;
-    --gris-claro-2: #f0f0f0;
-    --gris-oscuro: #ababab;
-    --blanco: #FFF;
-    --negro: #000;
-    --azul: #1475b0;
-    --error: #F4D6D2;
-    --error-fuente: #691911;
-    --success: #d7f4d2;
-    --success-fuente: #336911;
-    --creada: #0B5ED7;
-    --en-proceso: #FFCA2C;
-    --terminada: #157347;
-    --dark-grey: #242529;
-    --dark-grey-1: #3a3a3a;
-    --dark-grey-2: #101011;
+:root {
+  --fuente: 'SF Pro Display', sans-serif;
+
+  --primario: #784D3C;
+  --fondo: #f6f6f6;
+  --azul-claro: #16D5F8;
+  --azul-oscuro: #1A88FF;
+  --gradiente: linear-gradient(160deg, #1A88FF 0%, #16D5F8 100%);
+  --azul-marino: #111427;
+  --azul-marino-1: #0a0c17;
+  --gris-claro: #c4c4c4;
+  --gris-claro-2: #f0f0f0;
+  --gris-oscuro: #ababab;
+  --blanco: #FFF;
+  --negro: #000;
+  --azul: #1475b0;
+  --error: #F4D6D2;
+  --error-fuente: #691911;
+  --success: #d7f4d2;
+  --success-fuente: #336911;
+  --creada: #0B5ED7;
+  --en-proceso: #FFCA2C;
+  --terminada: #157347;
+  --dark-grey: #242529;
+  --dark-grey-1: #3a3a3a;
+  --dark-grey-2: #101011;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *, *:before, *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--fuente);
-    font-size: 1.8rem;
-    line-height: 1.5;
-    scroll-behavior: smooth;
-    user-select: none;
+  font-family: var(--fuente);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 body.dark-theme {
-    background-color: #4f4f4f;
-    color: var(--blanco);
+  background-color: #4f4f4f;
+  color: var(--blanco);
 }
 
 ::-webkit-scrollbar {
@@ -114,17 +114,11 @@ img {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-}
+@media (min-width: 1024px) {}
 
-@media (min-width: 1024px) {
-
-}
-
-@media (min-width: 1280px) {
-
-}
+@media (min-width: 1280px) {}
 
 /* Header */
 
@@ -146,9 +140,9 @@ img {
 
 @media (min-width: 768px) {
   .barra {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -334,8 +328,8 @@ img {
 main {
   display: grid;
   grid-template-areas:
-  "text"
-  "image";
+    "text"
+    "image";
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 1rem;
@@ -346,7 +340,7 @@ main {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "image text";
+      "image text";
     justify-items: center;
     align-items: center;
     margin-top: 2rem;
@@ -511,13 +505,13 @@ i {
 
 @media (min-width: 768px) {
   .footer-container {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
   .footer {
-      padding: 4rem;
+    padding: 4rem;
   }
 
   .footer-bottom {
@@ -851,8 +845,13 @@ i {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .sidebar {
@@ -867,9 +866,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar {
-      width: 9rem;
-    }
+  .sidebar {
+    width: 9rem;
+  }
 }
 
 .sidebar:hover {
@@ -877,9 +876,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar:hover {
-      width: 24rem;
-    }
+  .sidebar:hover {
+    width: 24rem;
+  }
 }
 
 .sidebar ul {
@@ -893,9 +892,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar li {
-      margin-bottom: 2.5rem;
-    }
+  .sidebar li {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .sidebar a {
@@ -912,9 +911,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar i {
-      margin-right: 1.2rem;
-    }
+  .sidebar i {
+    margin-right: 1.2rem;
+  }
 }
 
 .sidebar span, .sidebar .text-logo {
@@ -934,11 +933,11 @@ i {
 }
 
 @media (min-width: 768px) {
-    .logo-sidebar {
-      margin-left: -1.8rem;
-      max-width: 7rem;
-      margin-bottom: 4rem;
-    }
+  .logo-sidebar {
+    margin-left: -1.8rem;
+    max-width: 7rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .text-logo {
@@ -947,10 +946,10 @@ i {
 }
 
 @media (min-width: 768px) {
-    .text-logo {
-      max-width: 14rem;
-      margin-bottom: 4rem;
-    }
+  .text-logo {
+    max-width: 14rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .sidebar-enlace {
@@ -959,10 +958,10 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar-enlace {
-      padding: .4rem;
-      margin-left: 0;
-    }
+  .sidebar-enlace {
+    padding: .4rem;
+    margin-left: 0;
+  }
 }
 
 .sidebar-enlace,
@@ -993,10 +992,10 @@ i {
 }
 
 @media (min-width: 768px) {
-    .sidebar-bottom {
-      padding: .4rem;
-      margin-left: 0;
-    }
+  .sidebar-bottom {
+    padding: .4rem;
+    margin-left: 0;
+  }
 }
 
 .body-user {
@@ -1008,9 +1007,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .title-user {
-      margin-left: 12rem;
-    }    
+  .title-user {
+    margin-left: 12rem;
+  }
 }
 
 .main-user {
@@ -1020,9 +1019,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .main-user {
-      margin-left: 12rem;
-    }    
+  .main-user {
+    margin-left: 12rem;
+  }
 }
 
 .prox h4 {
@@ -1066,8 +1065,8 @@ i {
 
   .main-user {
     grid-template-areas:
-        "item-a item-c"
-        "item-b item-d";
+      "item-a item-c"
+      "item-b item-d";
   }
 }
 
@@ -1111,7 +1110,7 @@ i {
 @media (min-width: 768px) {
   .main-pistas {
     margin-left: 12rem;
-  } 
+  }
 }
 
 .polideportivo-container, .pista-container {
@@ -1143,7 +1142,7 @@ i {
 @media (min-width: 768px) {
   .main-profile, .main-contacto {
     margin-left: 12rem;
-  } 
+  }
 }
 
 .main-contacto-1 {
@@ -1154,9 +1153,9 @@ i {
 }
 
 @media (min-width: 768px) {
-    .main-contacto-1 {
-      width: 75%;
-    }
+  .main-contacto-1 {
+    width: 75%;
+  }
 }
 
 .container-register {
@@ -1368,11 +1367,11 @@ table th:last-child {
   table th, table td {
     display: block;
   }
-  
+
   table th {
     text-align: center;
   }
-  
+
   table tr {
     border-bottom: 1px solid #000000;
   }
@@ -1801,7 +1800,7 @@ table th:last-child {
     font-size: 1.8rem;
     padding: .5rem 2.2rem;
   }
-  
+
   .header-username i {
     font-size: 4.5rem;
   }
