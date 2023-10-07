@@ -125,6 +125,12 @@ img {
 .barra {
   padding: 1.6rem 4.6rem;
   background-color: var(--blanco);
+
+  /* Glassmorphism */
+  /* background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 @media (min-width: 768px) {
