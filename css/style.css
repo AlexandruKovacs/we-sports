@@ -210,11 +210,6 @@ img {
 .menu-btn i {
   color: var(--azul-marino);
   font-size: 2.2rem;
-  transition: all .3s;
-}
-
-.menu-btn:hover i {
-  color: var(--azul-claro);
 }
 
 .menu-btn.active {
