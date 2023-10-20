@@ -24,6 +24,6 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2023 WeSports SL. Todos los derechos reservados.</p>
+        <p>© <?php echo date("Y"); ?> WeSports SL. Todos los derechos reservados.</p>
     </div>
 </footer>

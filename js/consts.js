@@ -44,3 +44,6 @@ const newPassword2 = document.getElementById('newPassword2');
 const reservasActivas = document.getElementById('reservasActivas');
 const reservasCanceladas = document.getElementById('reservasCanceladas');
 const reservasCompletadas = document.getElementById('reservasCompletadas');
+
+const menuButton = document.getElementById("menuButton");
+const menu = document.querySelector(".barra");

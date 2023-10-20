@@ -3,7 +3,6 @@
         <a class="logo no-margin centrar-texto" href="index.php">
             <img src="img/logo-blue.png" alt="Logo">
         </a>
-
         <nav class="nav">
             <a href="index.php" class="nav-enlace <?php if(basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>">Inicio</a>
             <a href="company.php" class="nav-enlace <?php if(basename($_SERVER['PHP_SELF']) == 'company.php') echo 'active'; ?>">¿Eres una empresa?</a>
@@ -16,4 +15,8 @@
             <button class="btn btn-grad" id="registerUser">Empieza ya</button>
         </div>
     </div>
+
+    <button class="menu-btn" id="menuButton">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 </header>

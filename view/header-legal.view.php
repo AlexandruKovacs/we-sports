@@ -7,4 +7,8 @@
             <button class="btn btn-grad btn-legal" id="registerUserLegal">Empieza ya</button>
         </div>
     </div>
+
+    <button class="menu-btn" id="menuButton">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 </header>

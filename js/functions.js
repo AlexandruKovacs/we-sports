@@ -442,4 +442,17 @@ document.addEventListener("DOMContentLoaded", function () {
       redirectToRegister("cliente", true);
     }
   });
+
+  menuButton.addEventListener("click", function() {
+    menu.classList.toggle("active");
+    menuButton.classList.toggle("active");
+
+    let icon = menuButton.querySelector("i");
+    if (menu.classList.contains("active")) {
+      icon.className = "fa-solid fa-times";
+    } else {
+      icon.className = "fa-solid fa-bars";
+    }
+  });
+
 });

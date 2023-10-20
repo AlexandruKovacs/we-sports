@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'wesportsoficial@gmail.com';
-    $mail->Password = 'ylip awhg lspe rhnz';
+    $mail->Password = 'yxwg wnol owbd saan';
     $mail->Port = 587;
 
     $mail->setFrom($email, $nombre);

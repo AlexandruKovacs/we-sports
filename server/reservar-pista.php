@@ -42,7 +42,7 @@ if ($mysqli->query($sqlReserva) === TRUE) {
         $mail->SMTPAuth = true;
         $mail->Port = 587;
         $mail->Username = 'wesportsoficial@gmail.com';
-        $mail->Password = 'ylip awhg lspe rhnz';
+        $mail->Password = 'yxwg wnol owbd saan';
 
         $mail->setFrom('wesportsoficial@gmail.com', 'WeSports');
         $mail->addAddress($correoUser, $nameUser);
