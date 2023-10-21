@@ -273,8 +273,19 @@ img {
   margin-top: 2rem;
 }
 
+.menu_buttons_legal {
+  display: grid;
+  grid-template-columns: 0fr;
+  margin-top: 5rem;
+}
+
 @media (min-width: 768px) {
   .menu_buttons {
+    display: flex;
+    margin: 0;
+  }
+
+  .menu_buttons_legal {
     display: flex;
     margin: 0;
   }

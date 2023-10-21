@@ -3,7 +3,7 @@
         <a class="logo no-margin centrar-texto" href="../index.php">
             <img src="../img/logo-blue.png" alt="Logo">
         </a>
-        <div class="menu_buttons">
+        <div class="menu_buttons_legal">
             <button class="btn btn-grad btn-legal" id="registerUserLegal">Empieza ya</button>
         </div>
     </div>
