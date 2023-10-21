@@ -47,3 +47,7 @@ const reservasCompletadas = document.getElementById('reservasCompletadas');
 
 const menuButton = document.getElementById("menuButton");
 const menu = document.querySelector(".barra");
+const menuLegal = document.querySelector(".barra-legal");
+
+const menuButtonsNormal = document.querySelectorAll(".menu-button-normal");
+const menuButtonsLegal = document.querySelectorAll(".menu-button-legal");

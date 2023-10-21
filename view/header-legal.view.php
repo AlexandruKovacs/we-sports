@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="barra">
+    <div class="barra-legal">
         <a class="logo no-margin centrar-texto" href="../index.php">
             <img src="../img/logo-blue.png" alt="Logo">
         </a>

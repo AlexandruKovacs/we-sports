@@ -444,17 +444,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   menuButton.addEventListener("click", function() {
-    menu.classList.toggle("active");
+    if (menu) {
+      menu.classList.toggle("active");
+    }
+  
+    if (menuLegal) {
+      menuLegal.classList.toggle("active");
+    }
+  
     menuButton.classList.toggle("active");
-
+  
     let icon = menuButton.querySelector("i");
-    if (menu.classList.contains("active")) {
+    let isActive = false;
+  
+    if (menu && menu.classList.contains("active")) {
       icon.className = "fa-solid fa-times";
-      document.body.style.overflow = "hidden";
-    } else {
+      isActive = true;
+    }
+  
+    if (menuLegal && menuLegal.classList.contains("active")) {
+      icon.className = "fa-solid fa-times";
+      isActive = true;
+    }
+  
+    if (!isActive) {
       icon.className = "fa-solid fa-bars";
       document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
     }
   });
+  
 
 });

@@ -122,7 +122,7 @@ img {
 
 /* Header */
 
-.barra {
+.barra, .barra-legal {
   padding: 1.6rem 2.6rem;
   background-color: var(--blanco);
 
@@ -140,7 +140,11 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
-.barra.active {
+.barra-legal {
+  margin-top: -15rem;
+}
+
+.barra.active, .barra-legal.active {
   right: 0;
 }
 
@@ -156,12 +160,16 @@ img {
 }
 
 @media (min-width: 768px) {
-  .barra {
+  .barra, .barra-legal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     right: 0;
     min-height: 8vh;
+  }
+
+  .barra-legal {
+    margin-top: 0;
   }
 }
 
