@@ -450,8 +450,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let icon = menuButton.querySelector("i");
     if (menu.classList.contains("active")) {
       icon.className = "fa-solid fa-times";
+      document.body.style.overflow = "hidden";
     } else {
       icon.className = "fa-solid fa-bars";
+      document.body.style.overflow = "auto";
     }
   });
 
