@@ -33,7 +33,7 @@ require_once('sessions/index-session.php');
     <?php require_once('view/header.view.php'); ?>
     <input type="hidden" value="./server/contact-mail.php" id="urlPHP">
 
-    <main class="main-contacto-1">
+    <main class="main-contact">
         <?php require_once('view/contact-form.view.php'); ?>
     </main>
 

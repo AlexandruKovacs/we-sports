@@ -127,7 +127,7 @@ img {
   background-color: var(--blanco);
 
   position: fixed;
-  right: -600px;
+  right: -768px;
   width: 100%;
   min-height: 100vh;
   transition: 0.3s;
@@ -377,7 +377,7 @@ img {
 
 /* Main */
 
-main {
+main, .main-contact, .main-sports {
   display: grid;
   grid-template-areas:
     "text"
@@ -1587,12 +1587,19 @@ table th:last-child {
 
 .contacto-bg {
   background-image: url(../img/contact.webp);
-  height: 50rem;
+  height: 60rem;
   width: 90%;
   margin: 0 auto;
+  margin-top: 10rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .contacto-bg {
+    margin-top: 0rem;
+  }
 }
 
 .formulario {
@@ -1733,6 +1740,14 @@ table th:last-child {
   margin: 3rem;
   margin-top: 10rem;
   text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .section-deportes {
+    margin: 0 3rem;
+    margin-top: 0rem;
+  }
+    
 }
 
 .img-deportes img, .tarifas img {
