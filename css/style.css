@@ -217,7 +217,14 @@ img {
   z-index: 2;
 }
 
+.menu-btn:focus {
+  outline: 2px solid var(--azul-claro);
+  border-radius: .5rem;
+}
+
 .menu-btn i {
+  display: flex;
+  margin-top: auto;
   color: var(--azul-marino);
   font-size: 2.2rem;
 }
@@ -421,7 +428,7 @@ main, .main-contact, .main-sports {
 }
 
 .img-container img {
-  width: 35rem;
+  width: 45rem;
   border-radius: 1rem;
   grid-area: image;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
