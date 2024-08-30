@@ -6,6 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require '../vendor/phpmailer/phpmailer/src/Exception.php';
 require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+require '../config/we_sports_connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -16,14 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = $_POST["mensaje"];
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'wesportsoficial@gmail.com';
-    $mail->Password = 'yxwg wnol owbd saan';
+    $mail->Host = $host;
+    $mail->SMTPAuth = $smtp_auth;
+    $mail->Username = $username;
+    $mail->Password = $password;
     $mail->Port = 587;
 
     $mail->setFrom($email, $nombre);
-    $mail->addAddress('wesportsoficial@gmail.com');
+    $mail->addAddress($username);
 
     $mail->Subject = 'Nuevo mensaje de contacto desde WeSports';
     $mail->isHTML(true);
