@@ -1,10 +1,13 @@
 <?php
 
-$config = parse_ini_file('C:\xampp\htdocs\DAW\WeSports\config\config.ini');
-$db_host = $config['db_host'];
-$db_user = $config['db_user'];
-$db_password = $config['db_password'];
-$db_name = $config['db_name'];
+// InfinityFree
+$db_host = 'sql113.infinityfree.com';
+$db_user = 'if0_37014799';
+$db_password = 'VGEWGJZFM1';
+$db_name = 'if0_37014799_we_sports';
+
+# Email
+
 
 $mysqli = new mysqli($db_host, $db_user, $db_password, $db_name);
 
