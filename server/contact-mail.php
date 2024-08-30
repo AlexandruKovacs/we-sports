@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->SMTPAuth = $smtp_auth;
     $mail->Username = $username;
     $mail->Password = $password;
-    $mail->Port = 587;
+    $mail->Port = $port;
 
     $mail->setFrom($email, $nombre);
     $mail->addAddress($username);

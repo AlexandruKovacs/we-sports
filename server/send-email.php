@@ -8,18 +8,21 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 function sendConfirmationEmail($name, $email, $token) {
+
+    require '../config/we_sports_connection.php';
+
     $mail = new PHPMailer(true);
 
     try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Port = 587;
-        $mail->Username = 'wesportsoficial@gmail.com';
-        $mail->Password = 'yxwg wnol owbd saan';
+        $mail->Host = $host;
+        $mail->SMTPAuth = $smtp_auth;
+        $mail->Username = $username;
+        $mail->Password = $password;
+        $mail->Port = $port;
 
-        $mail->setFrom('wesportsoficial@gmail.com', 'WeSports');
+        $mail->setFrom($username, 'WeSports');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
 
