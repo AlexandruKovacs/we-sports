@@ -1,1 +1,4 @@
 config/we_sports_connection.php
+
+#Sonarqube
+.scannerwork
