@@ -1,0 +1,6 @@
+projectKey=we-sports
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=we-sports
+ceTaskId=fdda3ca6-b5f5-45c6-b8ba-a0a5cccde7f7
+ceTaskUrl=http://localhost:9000/api/ce/task?id=fdda3ca6-b5f5-45c6-b8ba-a0a5cccde7f7
